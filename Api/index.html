@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+</head>
+<style>
+    * {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    section {
+        width: 700px;        
+        padding: 20px;
+        background-color: rgb(255, 56, 21);
+        margin: auto;
+        margin-top: 10px;
+    }
+    .Busca-poke{
+        height: 350px;
+    }
+    h1,
+    h2 {
+        text-align: center;
+        margin-bottom: 5px;
+        color: #ffff;
+    }
+    p{
+        color: #ffff;
+    }
+    input,
+    button {
+        width: 120px;
+        padding: 9px 12px;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+
+    }
+
+    .contendor {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+        margin-top:20px;
+    }
+
+    .info>div {
+        width: 170px;
+        height: 145px;
+        border: 2px solid #ffff;
+        overflow: hidden;
+       
+    }
+
+    #Imgpoke {
+        height: 150px;
+        width: 170px;
+    }
+
+    button {
+        margin-top: 3px;
+        width: 40%;
+        cursor: pointer;
+    }
+
+    .conte-busca {
+        width: 70%;
+        margin: 10px auto;
+    }
+    .Hba-Esta{
+        display: flex;
+        gap: 15px;
+    }
+    .Hba-Esta>div{
+        width: 200px;
+        height: 180px;
+        border: 1px solid #ffff;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <section class="Busca-poke">
+        <h1>Consulta tu pokemon</h1>
+        <div class="contendor">
+            <div class="info">
+                <div>
+                    <img src="" alt="" id="Imgpoke">
+                </div>
+                <h2 id="nombre"></h2>
+            </div>
+            <div class="Hba-Esta">
+                <div id="habilidades" class="habilidades">
+                </div>
+                <div id="estado" class="habilidades">
+                </div>
+            </div>
+        </div>
+        <div class="conte-busca">
+            <input type="text" name="pokename" id="pokename" placeholder="ejem.Picakhu">
+            <button onclick="fetchPokemon()" id="buscar">Consultar</button>
+        </div>
+    </section>
+
+    <section>
+        <h1>Todos los pokemon</h1>
+        <button onclick="nombresTodos()" id="buscar">Todos los pokemon</button>
+        <div id="conte-todo" class="conte-todo"></div>
+    </section>
+
+    <script src="./Pokedex.js"></script>
+</body>
+
+</html>

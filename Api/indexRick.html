@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RICK AND MORTY</title>
+</head>
+<style>
+    * {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    section {        
+        width: 600px;
+        padding: 20px;
+        background-color: rgb(248, 220, 215);
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    input {
+        width: 120px;
+        padding: 5px 8px;
+        outline: none;
+    }
+    .contendor{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #Imgen{
+        height: 210px;
+        width: 210px;
+
+    }
+    .info>div{
+        height: 220px;
+        width: 220px; 
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    .conte-busca #consulta{
+        margin-top: 3px;
+        width: 60%;
+        padding: 8px 8px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(13, 126, 255);
+        cursor: pointer;
+    }
+
+    #todos{
+        padding: 8px 30px;
+        background-color: rgb(13, 126, 255);
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(13, 126, 255);
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+</style>
+
+<body>
+    <section>
+        <h1>Consulta nombres de la serie Rick and Morty</h1>
+        <div class="contendor">
+            <div class="info">
+                <div>
+                    <img src="" alt="" id="Imgen">
+                </div>
+                <h2 id="nombre"></h2>                
+                </div>               
+            <div class="conte-busca">
+                <input type="text" name="idPersonaje" id="idPersonaje" placeholder="Id: 1">
+                
+                <button onclick="rickNombres()" id="consulta">Consultar</button>
+            </div>
+        </div>        
+    </section>
+    <section>
+        <h1>Todos los nombres</h1>
+        <!-- <button onclick="nombresTodos()" id="todos">Todos</button> -->
+        <div id="conte-todo" class="conte-todo"></div>
+    </section>
+
+    <script src="./RickM.js"></script>
+</body>
+
+</html>

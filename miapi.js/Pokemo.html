@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <section>
+        <article class="contendor">
+            <div>
+                <div class="conte-imgen">
+                    <div class="imgen">
+                        <img src="" alt="" id="Imgpoke">
+                        <h2 id="nombre"></h2>
+                    </div>
+    
+                </div>
+                <div class="conte-busca">
+                    <input type="text" name="pokename" id="pokename" placeholder="Picakhu">
+                    <button onclick="fetchPokemon()" id="buscar">Buscar</button>
+                </div>
+                <div class="controles">
+                    <div class="botones">
+                        <div class="boton"></div>
+                    </div>
+                    <div class="recuadros">
+                        <div class="color">
+                            <div class="rojo"></div>
+                            <div class="azul"></div>
+                        </div>
+                        <div class="verde"></div>
+                    </div>
+                    <div class="control">
+                        <div class="arriba"></div>
+                        <div class="ambos">
+                            <div class="izq"></div>
+                            <div class="centro">
+                                <div></div>
+                            </div>
+                            <div class="der"></div>
+                        </div>
+                        <div class="abajo"></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="medio"></article>
+        <article class="conte-info">
+            <div>
+                <div class="tipos" id="tipos">
+                    <h2>Tipo:</h2>
+                    <p id="tipo"></p>
+                </div>
+                <div class="habilidades">
+                    <h2>Habilidades:</h2>
+                    <p id="habilidades"></p>
+                </div>
+                <div id="estado">
+    
+                </div>
+            </div>
+            <div>
+                <div class="movimientos">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div></div>
+                <div></div>
+            </div>
+        </article>
+    </section>
+    <!-- 
+    <section>
+        <h1>Todos los pokemon</h1>
+        <button onclick="nombresTodos()" id="buscar">Todos los pokemon</button>
+        <div id="conte-todo" class="conte-todo"></div>
+    </section> -->
+
+    <script src="./Pokedex.js"></script>
+</body>
+
+</html>
